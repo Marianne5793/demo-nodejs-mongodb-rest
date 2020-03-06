@@ -21,6 +21,7 @@ $(document).ready(function() {
                     if (html["status"] === "ok") {
                         addItem(html["value"], html["id"]);
                         $('#value').val('')
+                        alert("item added successfully")
                     } else {
                         $('#errorField').html(html["value"]);
                         $('#errorModal').modal("show");
